@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Formulario from './components/Formulario';
+import Mascotas from './components/Mascotas';
+import Movies from './components/Movies';
+import { StarWars } from './components/StarWars';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h3>Star Wars API</h3>
+      <StarWars />
+      <hr />
+      <Movies movies={["El Padrino", "Star Wars", "Toy Story"]} />
+      <Mascotas />
+      <h1>Formulario 1</h1>
+      <Formulario nombre="Francisco" />
+
+      <h3>Formulario 2</h3>
+      <Formulario nombre="Pancho" />
     </div>
   );
 }

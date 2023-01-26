@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+.perro {
+  color: red;
+  background-color: #282c34;
+}
+
+.gato {
+  color: blue;
+  background-color: #282c34;
+}
+
+.error {
+  color: red;
+  font-style: italic;
+  font-size: 10px;
+}
